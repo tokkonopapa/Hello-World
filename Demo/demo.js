@@ -1,3 +1,1 @@
-$('#demo span').each(function() {
-	$(this).html("<p>Hello World from tokkonopapa</p>");
-});
+$('#demo').html("<p>Hello World from tokkonopapa</p>");
