@@ -1,1 +1,12 @@
-$('#demo').html("<p>Hello World from tokkonopapa</p>");
+$(function() {
+	$.ajax({
+		type: "GET",
+		url: "/gh/get/response.html/tokkonopapa/Hello-World/tree/master/Demo/",
+		data: {
+			"delay": 3
+		},
+		dataType: "html"
+	}).success(function(data, textStatus, jqXHR) {
+		$("#demo").html(data);
+	});
+});
